@@ -81,6 +81,8 @@
 // #define SLOW    8
 // #define SCROLL  9
 
+chosen { zmk,matrix_transform = &five_column_transform; };
+
     keymap {
         compatible = "zmk,keymap";
         BASE {
