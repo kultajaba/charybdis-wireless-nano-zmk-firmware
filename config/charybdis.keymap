@@ -281,9 +281,9 @@
 
         NAVI {
             bindings = <
-  &none     &none     &none      &none      &none     &none    &kp HOME        &kp PG_UP  &kp PG_DN  &kp END
-  &kp LALT  &kp LGUI  &kp LCTRL  &kp LSHFT  &none     &kp TAB  &kp LEFT_ARROW  &kp DOWN   &kp UP     &kp RIGHT_ARROW
-  &none     &none     &none      &none      &none     &none    &kp BSPC        &kp DEL    &kp K_APP  &none
+  &none     &none     &none      &none      &none     &none    &kp HOME        &kp UP    &kp END    &kp PG_UP
+  &kp LALT  &kp LGUI  &kp LCTRL  &kp LSHFT  &none     &kp TAB  &kp LEFT_ARROW  &kp DOWN  &kp RIGHT  &kp PG_DN
+  &none     &none     &none      &none      &none     &none    &kp BSPC        &kp DEL   &kp K_APP  &none
                       &trans     &trans     &trans    &trans   &trans
             >;
         };

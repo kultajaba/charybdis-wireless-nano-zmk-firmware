@@ -44,9 +44,9 @@ layers:
   - ''
   - ''
   - HOME
-  - PG UP
-  - PG DN
+  - UP
   - END
+  - PG UP
   - LALT
   - LGUI
   - LCTRL
@@ -55,8 +55,8 @@ layers:
   - TAB
   - LEFT
   - DOWN
-  - UP
   - RIGHT
+  - PG DN
   - ''
   - ''
   - ''
