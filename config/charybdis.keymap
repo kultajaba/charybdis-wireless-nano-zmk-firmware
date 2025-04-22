@@ -292,8 +292,8 @@
         compatible = "zmk,conditional-layers";
 
         FUNC {
-            if-layers = <1>;
-            then-layer = <2>;
+            if-layers = <1 2>;
+            then-layer = <4>;
         };
     };
 };

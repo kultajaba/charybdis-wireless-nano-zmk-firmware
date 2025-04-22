@@ -175,11 +175,11 @@ layers:
   - F10
   - F11
   - DEV TOOLS
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
 combos:
 - p: [6, 7]
   k: AGr+ 8
