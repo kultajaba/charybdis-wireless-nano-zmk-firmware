@@ -179,11 +179,10 @@
     //                      ╰──────┴──────┴──────╯  ╰──────┴──────╯
 
     #define BASE    0
-    #define NAV     1
+    #define SCROLL     1
     #define NUM_SYM     2
     #define SLOW    3
-    #define SCROLL  4
-    #define FUNC   5
+    #define FUNC  4
 
     combos {
         compatible = "zmk,combos";
