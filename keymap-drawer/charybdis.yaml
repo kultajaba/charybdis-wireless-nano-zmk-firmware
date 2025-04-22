@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: charybdis}
 layers:
-  BASE:
+  '0':
   - ''''
   - D
   - U
@@ -31,12 +31,12 @@ layers:
   - ','
   - .
   - Q
-  - {t: ESC, h: NAV}
+  - {t: ESC, h: '1'}
   - '&mkp MB1'
   - SPACE
   - ENTER
-  - NUM_SYM
-  NAV:
+  - '2'
+  '1':
   - ''
   - ''
   - ''
@@ -72,7 +72,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  NUM_SYM:
+  '2':
   - ''
   - '7'
   - '8'
@@ -108,7 +108,7 @@ layers:
   - ENTER
   - {t: ▽, type: trans}
   - {type: held}
-  SLOW:
+  '3':
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -144,7 +144,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  SCROLL:
+  '4':
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -180,7 +180,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  FUNC:
+  '5':
   - {t: ▽, type: trans}
   - {t: PREV, h: RW}
   - PP
@@ -255,26 +255,26 @@ layers:
 combos:
 - p: [6, 7]
   k: AGr+ 8
-  l: [NUM_SYM]
+  l: ['2']
 - p: [7, 8]
   k: AGr+ 9
-  l: [NUM_SYM]
+  l: ['2']
 - p: [16, 17]
   k: '|'
-  l: [NUM_SYM]
+  l: ['2']
 - p: [17, 18]
   k: Sft+ |
-  l: [NUM_SYM]
+  l: ['2']
 - p: [26, 27]
   k: AGr+ 7
-  l: [NUM_SYM]
+  l: ['2']
 - p: [27, 28]
   k: AGr+ 0
 - p: [18, 19]
   k: '&ENDASH'
-  l: [NUM_SYM]
+  l: ['2']
 - p: [18, 19, 17]
   k: '&ENDASH'
-  l: [NUM_SYM]
+  l: ['2']
 - p: [14, 15]
   k: CAPS WORD
