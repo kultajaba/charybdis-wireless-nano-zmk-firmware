@@ -98,12 +98,41 @@
 
             bindings = <&kp>, <&kp>;
 
-            hold-trigger-key-positions = <6 7 8 9 18 19 35 39 40 5 6 7 8 9 15 16 17 18 19 25 26 27 28 29>;
+            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             hold-while-undecided;
             hold-while-undecided-linger;
             hold-trigger-on-release;
+        };
+
+        mkp_kp: mkp_kp {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <300>;
+            bindings = <&mkp>, <&kp>;
+
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            hold-while-undecided;
+            hold-while-undecided-linger;
+            hold-trigger-on-release;
+            label = "MKP_KP";
+        };
+
+        hm_lay: hm_lay {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <300>;
+            bindings = <&mo>, <&kp>;
+
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            hold-while-undecided;
+            hold-while-undecided-linger;
+            label = "HM_LAY";
         };
     };
 
@@ -222,9 +251,9 @@
 
         BASE {
             bindings = <
-  &kp SQT          &kp D            &kp U             &kp P              &kp W        &kp J      &kp K              &kp Y              &kp R             &kp SEMI
+  &kp SQT          &kp D            &kp U             &mkp_kp MB3 P      &kp W        &kp J      &kp K              &kp Y              &kp R             &kp SEMI
   &hm_left LALT A  &hm_left LGUI S  &hm_left LCTRL E  &hm_left LSHIFT T  &kp G        &kp H      &hm_right RSHFT N  &hm_right RCTRL I  &hm_right RGUI L  &hm_right LALT O
-  &kp Z            &kp X            &kp C             &kp V              &kp B        &kp F      &kp M              &kp COMMA          &kp DOT           &kp Q
+  &hm_lay 6 Z      &kp X            &kp C             &kp V              &kp B        &kp F      &kp M              &kp COMMA          &kp DOT           &kp Q
                                     &lt 1 ESC         &mkp MB1           &kp SPACE    &kp ENTER  &mo 2
             >;
         };
@@ -263,6 +292,33 @@
   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
                   &trans  &trans  &trans    &trans  &trans
             >;
+        };
+
+        FUNC {
+            bindings = <
+  &trans    &hm_left C_RW C_PREV  &kp C_PP   &hm_left C_FF C_NEXT  &trans    &trans  &kp F1  &kp F2   &kp F3   &kp F4
+  &kp LALT  &kp LGUI              &kp LCTRL  &kp LSHFT             &trans    &trans  &kp F5  &kp F6   &kp F7   &kp F8
+  &trans    &trans                &trans     &trans                &trans    &trans  &kp F9  &kp F10  &kp F11  &kp F12
+                                  &trans     &trans                &trans    &trans  &trans
+            >;
+        };
+
+        MOUSE {
+            bindings = <
+  &none  &none  &none  &none     &none    &none  &none  &none  &none  &none
+  &none  &none  &none  &none     &none    &none  &none  &none  &none  &none
+  &none  &none  &none  &none     &none    &none  &none  &none  &none  &none
+                &none  &mkp MB2  &none    &none  &none
+            >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        FUNC {
+            if-layers = <1>;
+            then-layer = <2>;
         };
     };
 };
