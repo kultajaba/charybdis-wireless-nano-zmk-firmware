@@ -4,7 +4,7 @@ layers:
   - ''''
   - D
   - U
-  - {t: P, h: '&mkp MB3'}
+  - P
   - W
   - J
   - K
@@ -21,7 +21,7 @@ layers:
   - {t: I, h: RCTRL}
   - {t: L, h: RGUI}
   - {t: O, h: LALT}
-  - {t: Z, h: '3'}
+  - {t: Z, h: SNIPE}
   - X
   - C
   - V
@@ -33,8 +33,8 @@ layers:
   - Q
   - {t: ESC, h: '1'}
   - '&mkp MB1'
-  - SPACE
-  - ENTER
+  - {t: SPACE, h: '3'}
+  - RSHIFT
   - '2'
   '1':
   - ''
@@ -62,16 +62,16 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - ENTER
   - BSPC
   - DEL
   - APP
   - ''
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - '4'
   '2':
   - ''
   - '7'
@@ -87,7 +87,7 @@ layers:
   - '4'
   - '5'
   - '6'
-  - ''
+  - '0'
   - '='
   - {t: '!', h: RSHFT}
   - {t: Sft+ -, h: RCTRL}
@@ -103,54 +103,18 @@ layers:
   - AGr+ 2
   - Sft+ /
   - ''
-  - .
-  - '0'
+  - {t: ., h: '4'}
+  - ''
   - ENTER
-  - {t: ▽, type: trans}
-  - {type: held}
-  '3':
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
   - ''
   - {type: held}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - BACK
-  - '&mkp MB2'
-  - FWD
-  - ''
-  - ''
   '4':
-  - {t: ▽, type: trans}
+  - ''
   - {t: PREV, h: RW}
   - PP
   - {t: NEXT, h: FF}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
   - F1
   - F2
   - F3
@@ -159,27 +123,99 @@ layers:
   - LGUI
   - LCTRL
   - LSHFT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - CAPS
   - F5
   - F6
   - F7
   - F8
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - KP NUM
   - F9
   - F10
   - F11
   - DEV TOOLS
   - {type: held}
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  '3':
+  - ''
+  - BACK
+  - ''
+  - FWD
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&mkp MB3'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&mkp MB2'
+  - ''
+  - '&mkp MB1'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  SNIPE:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
 combos:
 - p: [6, 7]
   k: AGr+ 8
@@ -206,3 +242,12 @@ combos:
   l: ['2']
 - p: [14, 15]
   k: CAPS WORD
+- p: [21, 22]
+  k: '&SUPER2'
+  l: ['2']
+- p: [23, 22]
+  k: '&SUPER3'
+  l: ['2']
+- p: [14, 13]
+  k: '&DEG'
+  l: ['2']
