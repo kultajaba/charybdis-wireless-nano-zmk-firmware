@@ -16,7 +16,7 @@
     trackball_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
-        layers = <0 2 7>;
+          layers = <0 5>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
@@ -31,7 +31,7 @@
     trackball_snipe_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
-        layers = <3>;
+        layers = <6>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
@@ -44,11 +44,11 @@
     trackball_scroll_listener_vert {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
-        layers = <1>;
+        layers = <1 2>;
         evt-type = <INPUT_EV_REL>;
         y-input-code = <INPUT_REL_WHEEL>;  // vertical scroll
         y-invert;
-        bindings = <&ib_wheel_scaler 1 24>;  // vertical scroll speed
+        bindings = <&ib_wheel_scaler 1 32>;  // vertical scroll speed
     };
 
     trackball_scroll_listener_horiz {
@@ -57,7 +57,7 @@
         layers = <1>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_HWHEEL>;  // horizontal scroll
-        bindings = <&ib_wheel_scaler 1 8>;  // horizontal scroll speed
+        bindings = <&ib_wheel_scaler 1 16>;  // horizontal scroll speed
     };
 
     /* define a resolution down scaler only for INPUT_REL_WHEEL */
