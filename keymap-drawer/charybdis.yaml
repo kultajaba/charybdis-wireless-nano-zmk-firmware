@@ -34,7 +34,7 @@ layers:
   - {t: ENTER, h: '1'}
   - '&mkp MB1'
   - {t: SPACE, h: '3'}
-  - {t: ESC, h: '2'}
+  - {t: ESC, h: RSHFT}
   - '2'
   '1':
   - ''
@@ -47,10 +47,10 @@ layers:
   - UP
   - END
   - PG UP
-  - LALT
-  - LGUI
+  - '&mw_alt'
+  - '&mw_gui'
   - '&mw_ctrl'
-  - LSHFT
+  - '&mw_shft'
   - ''
   - TAB
   - LEFT
@@ -142,8 +142,8 @@ layers:
   - {t: ., h: '1'}
   - ''
   - ENTER
-  - {type: held}
   - ''
+  - {type: held}
   '4':
   - ''
   - {t: PREV, h: RW}
@@ -178,8 +178,8 @@ layers:
   - {type: held}
   - ''
   - ''
-  - {type: held}
   - ''
+  - {type: held}
   '3':
   - ''
   - ''

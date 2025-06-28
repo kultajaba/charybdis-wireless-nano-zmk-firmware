@@ -303,6 +303,14 @@
 
             label = "MW_ALT";
         };
+
+        triple0: triple0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp N0 &kp N0 &kp N0>;
+
+            label = "TRIPLE0";
+        };
     };
 
     // ╭──────┬──────┬──────┬──────┬──────┬──────╮  ╭──────┬──────┬──────┬──────┬──────┬──────╮
@@ -400,19 +408,19 @@
 
         BASE {
             bindings = <
-  &kp SQT          &kp D            &kp U             &kp P              &kp W              &kp J      &kp K              &kp Y              &kp R            &kp SEMI
-  &hm_lgui LALT A  &hm_lgui LGUI S  &hm_left LCTRL E  &hm_left LSHIFT T  &kp G              &kp H      &hm_right RSHFT N  &hm_right RCTRL I  &hm_rgui RGUI L  &hm_rgui LALT O
-  &hm_lay 6 Z      &kp X            &kp C             &kp V              &kp B              &kp F      &kp M              &kp COMMA          &kp DOT          &kp Q
-                                    &lt 1 ENTER       &mkp MB1           &hm_lay 5 SPACE    &lt 3 ESC  &mo 3
+  &kp SQT          &kp D            &kp U             &kp P              &kp W              &kp J                &kp K              &kp Y              &kp R            &kp SEMI
+  &hm_lgui LALT A  &hm_lgui LGUI S  &hm_left LCTRL E  &hm_left LSHIFT T  &kp G              &kp H                &hm_right RSHFT N  &hm_right RCTRL I  &hm_rgui RGUI L  &hm_rgui LALT O
+  &hm_lay 6 Z      &kp X            &kp C             &kp V              &kp B              &kp F                &kp M              &kp COMMA          &kp DOT          &kp Q
+                                    &lt 1 ENTER       &mkp MB1           &hm_lay 5 SPACE    &hm_right RSHFT ESC  &mo 3
             >;
         };
 
         NAVI {
             bindings = <
-  &none     &none     &none     &none      &none    &none      &kp HOME        &kp UP    &kp END    &kp PG_UP
-  &kp LALT  &kp LGUI  &mw_ctrl  &kp LSHFT  &none    &kp TAB    &kp LEFT_ARROW  &kp DOWN  &kp RIGHT  &kp PG_DN
-  &none     &none     &none     &none      &none    &kp ENTER  &kp BSPC        &kp DEL   &kp K_APP  &none
-                      &none     &none      &none    &none      &mo 3
+  &none    &none    &none     &none     &none    &none      &kp HOME        &kp UP    &kp END    &kp PG_UP
+  &mw_alt  &mw_gui  &mw_ctrl  &mw_shft  &none    &kp TAB    &kp LEFT_ARROW  &kp DOWN  &kp RIGHT  &kp PG_DN
+  &none    &none    &none     &none     &none    &kp ENTER  &kp BSPC        &kp DEL   &kp K_APP  &none
+                    &none     &none     &none    &none      &mo 3
             >;
         };
 
