@@ -31,10 +31,10 @@ layers:
   - ','
   - .
   - Q
-  - {t: ESC, h: '1'}
+  - {t: ENTER, h: '1'}
   - '&mkp MB1'
   - {t: SPACE, h: '3'}
-  - RSHIFT
+  - {t: ESC, h: '2'}
   - '2'
   '1':
   - ''
@@ -49,7 +49,7 @@ layers:
   - PG UP
   - LALT
   - LGUI
-  - LCTRL
+  - '&mw_ctrl'
   - LSHFT
   - ''
   - TAB
@@ -72,6 +72,42 @@ layers:
   - ''
   - ''
   - '4'
+  NAVI_MOD:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   '2':
   - ''
   - '7'
@@ -97,17 +133,17 @@ layers:
   - '1'
   - '2'
   - '3'
-  - ''
+  - /
   - ']'
   - AGr+ -
   - AGr+ 2
   - Sft+ /
-  - ''
+  - Sft+ 2
   - {t: ., h: '4'}
   - ''
   - ENTER
-  - ''
   - {type: held}
+  - ''
   '4':
   - ''
   - {t: PREV, h: RW}
@@ -146,18 +182,8 @@ layers:
   - {type: held}
   '3':
   - ''
-  - BACK
-  - ''
-  - FWD
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - '&mkp MB3'
   - ''
   - ''
   - ''
@@ -167,8 +193,18 @@ layers:
   - ''
   - ''
   - '&mkp MB2'
-  - ''
+  - '&mkp MB3'
   - '&mkp MB1'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - ''
   - ''
