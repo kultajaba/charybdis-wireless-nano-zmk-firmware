@@ -264,6 +264,45 @@
 
             label = "MW_CTRL";
         };
+
+        mw_shft: mw_shft {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&mo 2 &kp LSHFT>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&mo 2 &kp LSHFT>;
+
+            label = "MW_SHFT";
+        };
+
+        mw_gui: mw_gui {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&mo 2 &kp LWIN>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&mo 2 &kp LWIN>;
+
+            label = "MW_GUI";
+        };
+
+        mw_alt: mw_alt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&mo 2 &kp LALT>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&mo 2 &kp LALT>;
+
+            label = "MW_ALT";
+        };
     };
 
     // ╭──────┬──────┬──────┬──────┬──────┬──────╮  ╭──────┬──────┬──────┬──────┬──────┬──────╮
