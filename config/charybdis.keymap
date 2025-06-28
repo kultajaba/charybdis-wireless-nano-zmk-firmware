@@ -255,7 +255,12 @@
         mw_ctrl: mw_ctrl {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&mo 2 &kp LS(LCTRL)>;
+            bindings =
+                <&macro_press>,
+                <&mo 2 &kp LCTRL>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&mo 2 &kp LCTRL>;
 
             label = "MW_CTRL";
         };
