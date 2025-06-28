@@ -368,7 +368,7 @@
   &none     &none     &none     &none      &none    &none      &kp HOME        &kp UP    &kp END    &kp PG_UP
   &kp LALT  &kp LGUI  &mw_ctrl  &kp LSHFT  &none    &kp TAB    &kp LEFT_ARROW  &kp DOWN  &kp RIGHT  &kp PG_DN
   &none     &none     &none     &none      &none    &kp ENTER  &kp BSPC        &kp DEL   &kp K_APP  &none
-                      &none     &none      &none    &none      &mo 4
+                      &none     &none      &none    &none      &mo 3
             >;
         };
 
@@ -386,7 +386,7 @@
   &none              &kp N7  &kp N8        &kp N9  &kp PRCNT    &kp LS(NUMBER_6)   &kp LS(N7)            &kp LS(N8)                 &kp LS(N9)            &kp LS(N0)
   &kp LS(BACKSLASH)  &kp N4  &kp N5        &kp N6  &kp N0       &kp EQUAL          &hm_right RSHFT EXCL  &hm_right RCTRL LS(MINUS)  &hm_right RGUI SLASH  &hm_right LEFT_ALT BACKSLASH
   &kp COMMA          &kp N1  &kp N2        &kp N3  &kp SLASH    &kp RIGHT_BRACKET  &kp RA(MINUS)         &kp RA(NUMBER_2)           &kp LS(SLASH)         &kp LS(N2)
-                             &lt 4 PERIOD  &none   &kp ENTER    &none              &none
+                             &lt 1 PERIOD  &none   &kp ENTER    &none              &none
             >;
         };
 

@@ -71,7 +71,7 @@ layers:
   - ''
   - ''
   - ''
-  - '4'
+  - '2'
   NAVI_MOD:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -139,7 +139,7 @@ layers:
   - AGr+ 2
   - Sft+ /
   - Sft+ 2
-  - {t: ., h: '4'}
+  - {t: ., h: '1'}
   - ''
   - ENTER
   - {type: held}
@@ -178,8 +178,8 @@ layers:
   - {type: held}
   - ''
   - ''
-  - ''
   - {type: held}
+  - ''
   '3':
   - ''
   - ''
