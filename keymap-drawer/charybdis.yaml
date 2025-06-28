@@ -113,7 +113,7 @@ layers:
   - {t: PREV, h: RW}
   - PP
   - {t: NEXT, h: FF}
-  - ''
+  - BT NXT
   - ''
   - F1
   - F2
@@ -123,17 +123,17 @@ layers:
   - LGUI
   - LCTRL
   - LSHFT
-  - ''
+  - BT CLR
   - CAPS
   - F5
   - F6
   - F7
   - F8
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - VOL DN
+  - MUTE
+  - VOL UP
+  - OUT TOG
   - KP NUM
   - F9
   - F10
