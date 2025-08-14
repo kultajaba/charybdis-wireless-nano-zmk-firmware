@@ -49,7 +49,7 @@
         y-input-code = <INPUT_REL_WHEEL>;  // vertical scroll
         y-invert;
         x-input-code = <INPUT_REL_HWHEEL>;
-        bindings = <&ib_wheel_scaler 1 48>;  // vertical scroll speed
+        bindings = <&ib_wheel_scaler 1 48>, <&ib_hwheel_scaler 1 48>;  // vertical scroll speed
     };
 
     trackball_scroll_listener_horiz {
@@ -69,8 +69,7 @@
         compatible = "zmk,input-behavior-scaler";
         #binding-cells = <2>;
         evt-type = <INPUT_EV_REL>;
-        y-input-code = <INPUT_REL_WHEEL>;
-        x-input-code = <INPUT_REL_HWHEEL>;
+        input-code = <INPUT_REL_WHEEL>;
     };
 
     ib_hwheel_scaler: ib_hwheel_scaler {
@@ -497,6 +496,7 @@
         };
     };
 };
+
 
 
 
