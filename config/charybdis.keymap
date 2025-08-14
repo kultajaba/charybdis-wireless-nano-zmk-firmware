@@ -57,7 +57,7 @@
         layers = <1>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_HWHEEL>;  // horizontal scroll
-        bindings = <&ib_wheel_scaler 1 48>;  // horizontal scroll speed
+        bindings = <&ib_hwheel_scaler 1 128>;  // horizontal scroll speed
     };
 
     /* define a resolution down scaler only for INPUT_REL_WHEEL */
@@ -68,6 +68,14 @@
         evt-type = <INPUT_EV_REL>;
         input-code = <INPUT_REL_WHEEL>;
     };
+
+    ib_hwheel_scaler: ib_hwheel_scaler {
+        compatible = "zmk,input-behavior-scaler";
+        #binding-cells = <2>;
+        evt-type = <INPUT_EV_REL>;
+        input-code = <INPUT_REL_HWHEEL>;
+    };
+
 
     /* adjust cooldown waiting period for mouse key layer after activated */
 
@@ -485,3 +493,4 @@
         };
     };
 };
+
