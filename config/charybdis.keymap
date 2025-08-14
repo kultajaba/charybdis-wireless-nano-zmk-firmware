@@ -49,8 +49,8 @@
         y-input-code = <INPUT_REL_WHEEL>;  // vertical scroll
         y-invert;
         x-input-code = <INPUT_REL_HWHEEL>;  // horizontal scroll
-        bindings = <&ib_wheel_scaler 1 24>;  // vertical scroll speed
-        bindings = <&ib_hwheel_scaler 1 48>;  // horizontal scroll speed
+        bindings = <&ib_wheel_scaler 1 48>;  // vertical scroll speed
+        bindings = <&ib_hwheel_scaler 1 64>;  // horizontal scroll speed
     };
 
     trackball_scroll_listener {
@@ -61,7 +61,7 @@
         y-input-code = <INPUT_REL_WHEEL>;  // vertical scroll
         y-invert;
         x-input-code = <INPUT_REL_MISC>;
-        bindings = <&ib_wheel_scaler 1 24>;  // vertical scroll speed
+        bindings = <&ib_wheel_scaler 1 48>;  // vertical scroll speed
     };
 
     /* define a resolution down scaler only for INPUT_REL_WHEEL */
@@ -497,6 +497,7 @@
         };
     };
 };
+
 
 
 
