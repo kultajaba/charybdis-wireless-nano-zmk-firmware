@@ -20,7 +20,7 @@
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
-        scale-multiplier = <4>;
+        scale-multiplier = <3>;
         scale-divisor = <5>;
 
         // bindings = <&ib_toggle_layer 7>;
@@ -48,7 +48,7 @@
         evt-type = <INPUT_EV_REL>;
         y-input-code = <INPUT_REL_WHEEL>;  // vertical scroll
         y-invert;
-        bindings = <&ib_wheel_scaler 1 32>;  // vertical scroll speed
+        bindings = <&ib_wheel_scaler 1 64>;  // vertical scroll speed
     };
 
     trackball_scroll_listener_horiz {
@@ -493,4 +493,5 @@
         };
     };
 };
+
 
