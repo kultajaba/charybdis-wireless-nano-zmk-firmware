@@ -48,7 +48,7 @@
         evt-type = <INPUT_EV_REL>;
         y-input-code = <INPUT_REL_WHEEL>;  // vertical scroll
         y-invert;
-        x-input-code = <INPUT_REL_MISC>;
+        x-input-code = <INPUT_REL_HWHEEL>;
         bindings = <&ib_wheel_scaler 1 64>;  // vertical scroll speed
     };
 
@@ -57,10 +57,10 @@
         device = <&vtrackball>;
         layers = <2>;
         evt-type = <INPUT_EV_REL>;
-        y-input-code = <INPUT_REL_MISC>;  // vertical scroll
+        y-input-code = <INPUT_REL_WHEEL>;  // vertical scroll
         y-invert;
-        x-input-code = <INPUT_REL_HWHEEL>;
-        bindings = <&ib_hwheel_scaler 1 48>;  // vertical scroll speed
+        x-input-code = <INPUT_REL_MISC>;
+        bindings = <&ib_wheel_scaler 1 64>;  // vertical scroll speed
     };
 
     /* define a resolution down scaler only for INPUT_REL_WHEEL */
@@ -496,6 +496,7 @@
         };
     };
 };
+
 
 
 
