@@ -41,23 +41,27 @@
 
     /* input config for mouse scroll mode */
 
-    trackball_scroll_listener_vert {
-        compatible = "zmk,input-behavior-listener";
-        device = <&vtrackball>;
-        layers = <1 2>;
-        evt-type = <INPUT_EV_REL>;
-        y-input-code = <INPUT_REL_WHEEL>;  // vertical scroll
-        y-invert;
-        bindings = <&ib_wheel_scaler 1 24>;  // vertical scroll speed
-    };
-
-    trackball_scroll_listener_horiz {
+    trackball_navi_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
         layers = <1>;
         evt-type = <INPUT_EV_REL>;
+        y-input-code = <INPUT_REL_WHEEL>;  // vertical scroll
+        y-invert;
         x-input-code = <INPUT_REL_HWHEEL>;  // horizontal scroll
-        bindings = <&ib_hwheel_scaler 1 8>;  // horizontal scroll speed
+        bindings = <&ib_wheel_scaler 1 24>;  // vertical scroll speed
+        bindings = <&ib_hwheel_scaler 1 48>;  // horizontal scroll speed
+    };
+
+    trackball_scroll_listener {
+        compatible = "zmk,input-behavior-listener";
+        device = <&vtrackball>;
+        layers = <2>;
+        evt-type = <INPUT_EV_REL>;
+        y-input-code = <INPUT_REL_WHEEL>;  // vertical scroll
+        y-invert;
+        x-input-code = <INPUT_REL_MISC>;
+        bindings = <&ib_wheel_scaler 1 24>;  // vertical scroll speed
     };
 
     /* define a resolution down scaler only for INPUT_REL_WHEEL */
@@ -493,6 +497,7 @@
         };
     };
 };
+
 
 
 
