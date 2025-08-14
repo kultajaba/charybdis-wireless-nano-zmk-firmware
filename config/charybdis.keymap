@@ -114,20 +114,6 @@
             hold-trigger-on-release;
         };
 
-        mkp_kp: mkp_kp {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <300>;
-            bindings = <&mkp>, <&kp>;
-
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <150>;
-            hold-while-undecided;
-            hold-trigger-on-release;
-            label = "MKP_KP";
-        };
-
         hm_lay: hm_lay {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -168,6 +154,16 @@
             require-prior-idle-ms = <150>;
             hold-trigger-on-release;
             label = "HM_LGUI";
+        };
+
+        mb3_tog: mb3_tog {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MB3_TOG";
+            bindings = <&mb3_navi>, <&tog>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            hold-while-undecided;
         };
     };
 
@@ -311,6 +307,19 @@
 
             label = "TRIPLE0";
         };
+
+        mb3_navi: mb3_navi {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&mo 3 &mkp MB3>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&mo 3 &mkp MB3>;
+
+            label = "MB3_NAVI";
+        };
     };
 
     // ╭──────┬──────┬──────┬──────┬──────┬──────╮  ╭──────┬──────┬──────┬──────┬──────┬──────╮
@@ -335,31 +344,31 @@
         LBRACKER {
             bindings = <&kp RA(N8)>;
             key-positions = <6 7>;
-            layers = <3>;
+            layers = <4>;
         };
 
         RBRACKET {
             bindings = <&kp RA(N9)>;
             key-positions = <7 8>;
-            layers = <3>;
+            layers = <4>;
         };
 
         LESSTHAN {
             bindings = <&kp NON_US_BSLH>;
             key-positions = <16 17>;
-            layers = <3>;
+            layers = <4>;
         };
 
         MORETHAN {
             bindings = <&kp LS(NON_US_BSLH)>;
             key-positions = <17 18>;
-            layers = <3>;
+            layers = <4>;
         };
 
         LBRACE {
             bindings = <&kp RA(N7)>;
             key-positions = <26 27>;
-            layers = <3>;
+            layers = <4>;
         };
 
         RBRACE {
@@ -370,13 +379,13 @@
         ENDASH {
             bindings = <&ENDASH>;
             key-positions = <18 19>;
-            layers = <3>;
+            layers = <4>;
         };
 
         EMDASH {
-            bindings = <&ENDASH>;
+            bindings = <&EMDASH>;
             key-positions = <18 19 17>;
-            layers = <3>;
+            layers = <4>;
         };
 
         CAPSWORD {
@@ -387,19 +396,19 @@
         SUPER2 {
             bindings = <&SUPER2>;
             key-positions = <21 22>;
-            layers = <3>;
+            layers = <4>;
         };
 
         SUPER3 {
             bindings = <&SUPER3>;
             key-positions = <23 22>;
-            layers = <3>;
+            layers = <4>;
         };
 
         DEG {
             bindings = <&DEG>;
             key-positions = <14 13>;
-            layers = <3>;
+            layers = <4>;
         };
     };
 
@@ -408,23 +417,23 @@
 
         BASE {
             bindings = <
-  &kp SQT          &kp D            &kp U             &kp P              &kp W              &kp J                &kp K              &kp Y              &kp R            &kp SEMI
-  &hm_lgui LALT A  &hm_lgui LGUI S  &hm_left LCTRL E  &hm_left LSHIFT T  &kp G              &kp H                &hm_right RSHFT N  &hm_right RCTRL I  &hm_rgui RGUI L  &hm_rgui LALT O
-  &hm_lay 6 Z      &kp X            &kp C             &kp V              &kp B              &kp F                &kp M              &kp COMMA          &kp DOT          &kp Q
-                                    &lt 1 ENTER       &mkp MB1           &hm_lay 5 SPACE    &hm_right RSHFT ESC  &mo 3
+  &kp SQT          &kp D            &kp U             &kp P              &kp W       &kp J      &kp K              &kp Y              &kp R            &kp SEMI
+  &hm_lgui LALT A  &hm_lgui LGUI S  &hm_left LCTRL E  &hm_left LSHIFT T  &kp G       &kp H      &hm_right RSHFT N  &hm_right RCTRL I  &hm_rgui RGUI L  &hm_rgui LALT O
+  &hm_lay 6 Z      &kp X            &kp C             &kp V              &kp B       &kp F      &kp M              &kp COMMA          &kp DOT          &kp Q
+                                    &mb3_tog 0 1      &mkp MB1           &mkp MB2    &kp SPACE  &mo 4
             >;
         };
 
-        NAVI {
+        SCROLL {
             bindings = <
-  &none    &none    &none     &none     &none    &none      &kp HOME        &kp UP    &kp END    &kp PG_UP
-  &mw_alt  &mw_gui  &mw_ctrl  &mw_shft  &none    &kp TAB    &kp LEFT_ARROW  &kp DOWN  &kp RIGHT  &kp PG_DN
-  &none    &none    &none     &none     &none    &kp ENTER  &kp BSPC        &kp DEL   &kp K_APP  &none
-                    &none     &none     &none    &none      &mo 3
+  &trans   &trans   &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans
+  &mw_alt  &mw_gui  &mw_ctrl  &mw_shft  &trans    &trans  &trans  &trans  &trans  &trans
+  &trans   &trans   &trans    &trans    &trans    &trans  &trans  &trans  &trans  &trans
+                    &trans    &trans    &trans    &trans  &trans
             >;
         };
 
-        NAVI_MOD {
+        SCROLL_MOD {
             bindings = <
   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
@@ -433,12 +442,21 @@
             >;
         };
 
+        NAVI {
+            bindings = <
+  &none     &none     &msc SCRL_UP    &none      &none    &none      &kp HOME        &kp UP    &kp END    &kp PG_UP
+  &kp LALT  &kp LWIN  &kp LCTRL       &kp LSHFT  &none    &kp TAB    &kp LEFT_ARROW  &kp DOWN  &kp RIGHT  &kp PG_DN
+  &none     &none     &msc SCRL_DOWN  &none      &none    &kp ENTER  &kp BSPC        &kp DEL   &kp K_APP  &none
+                      &none           &none      &none    &none      &mo 4
+            >;
+        };
+
         NUM_SYM {
             bindings = <
   &none              &kp N7  &kp N8        &kp N9  &kp PRCNT    &kp LS(NUMBER_6)   &kp LS(N7)            &kp LS(N8)                 &kp LS(N9)            &kp LS(N0)
-  &kp LS(BACKSLASH)  &kp N4  &kp N5        &kp N6  &kp N0       &kp EQUAL          &hm_right RSHFT EXCL  &hm_right RCTRL LS(MINUS)  &hm_right RGUI SLASH  &hm_right LEFT_ALT BACKSLASH
-  &kp COMMA          &kp N1  &kp N2        &kp N3  &kp SLASH    &kp RIGHT_BRACKET  &kp RA(MINUS)         &kp RA(NUMBER_2)           &kp LS(SLASH)         &kp LS(N2)
-                             &lt 1 PERIOD  &none   &kp ENTER    &none              &none
+  &kp LS(BACKSLASH)  &kp N4  &kp N5        &kp N6  &none        &kp EQUAL          &hm_right RSHFT EXCL  &hm_right RCTRL LS(MINUS)  &hm_right RGUI SLASH  &hm_right LEFT_ALT BACKSLASH
+  &kp COMMA          &kp N1  &kp N2        &kp N3  &none        &kp RIGHT_BRACKET  &kp RA(MINUS)         &kp RA(NUMBER_2)           &kp LS(SLASH)         &kp LS(N2)
+                             &lt 3 PERIOD  &kp N0  &kp ENTER    &none              &none
             >;
         };
 
@@ -448,15 +466,6 @@
   &kp LALT  &kp LGUI              &kp LCTRL   &kp LSHFT             &bt BT_CLR      &kp CAPS    &kp F5  &kp F6   &kp F7   &kp F8
   &none     &kp C_VOL_DN          &kp C_MUTE  &kp C_VOL_UP          &out OUT_TOG    &kp KP_NUM  &kp F9  &kp F10  &kp F11  &kp F12
                                   &none       &none                 &none           &none       &none
-            >;
-        };
-
-        MOUSE {
-            bindings = <
-  &none  &none     &none     &none     &none    &none  &none  &none  &none  &none
-  &none  &mkp MB2  &mkp MB3  &mkp MB1  &none    &none  &none  &none  &none  &none
-  &none  &none     &none     &none     &none    &none  &none  &none  &none  &none
-                   &none     &none     &none    &none  &none
             >;
         };
 
@@ -474,8 +483,8 @@
         compatible = "zmk,conditional-layers";
 
         FUNC {
-            if-layers = <1 3>;
-            then-layer = <4>;
+            if-layers = <3 4>;
+            then-layer = <5>;
         };
     };
 };
