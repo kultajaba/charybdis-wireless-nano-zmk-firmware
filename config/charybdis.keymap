@@ -404,15 +404,16 @@
             layers = <3>;
         };
 
-        MB3 {
-            bindings = <&mkp MB3>;
-            key-positions = <31 30>;
+        mb2_combo {
+            bindings = <&mkp MB2>;
+            key-positions = <31 32>;
             layers = <0 5>;
         };
 
-        MB2 {
-            bindings = <&mkp MB2>;
-            key-positions = <32 31>;
+        mb3_combo {
+            bindings = <&mkp MB3>;
+            key-positions = <30 31>;
+            layers = <0 5>;
         };
     };
 

@@ -12,14 +12,14 @@ layers:
   - R
   - ;
   - {t: A, h: LALT}
-  - {t: S, h: LGUI}
+  - {t: S, h: LWIN}
   - {t: E, h: LCTRL}
   - {t: T, h: LSHIFT}
   - G
   - H
   - {t: N, h: RSHFT}
   - {t: I, h: RCTRL}
-  - {t: L, h: RGUI}
+  - {t: L, h: RWIN}
   - {t: O, h: LALT}
   - {t: Z, h: SNIPE}
   - X
@@ -31,47 +31,47 @@ layers:
   - ','
   - .
   - Q
-  - {t: SCROLL, h: '&mb3_navi'}
+  - {t: ESC, h: '1'}
   - '&mkp MB1'
-  - '&mkp MB2'
   - SPACE
+  - RSHFT
+  - {t: ENTER, h: '2'}
+  '1':
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - HOME
+  - UP
+  - END
+  - PG UP
+  - {t: LALT, h: '&mw_alt'}
+  - {t: LWIN, h: '&mw_gui'}
+  - {t: LCTRL, h: '&mw_ctrl'}
+  - {t: LSHFT, h: '&mw_shft'}
+  - ''
+  - TAB
+  - LEFT
+  - DOWN
+  - RIGHT
+  - PG DN
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ENTER
+  - BSPC
+  - DEL
+  - APP
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - ''
   - '2'
-  SCROLL:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&mw_alt'
-  - '&mw_gui'
-  - '&mw_ctrl'
-  - '&mw_shft'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   SCROLL_MOD:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -108,8 +108,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  '1': ['', '', '&msc SCRL_UP', '', '', '', HOME, UP, END, PG UP, LALT, LWIN, LCTRL, LSHFT, '', TAB, LEFT, DOWN, RIGHT, PG DN, '', '', '&msc SCRL_DOWN', '', '', ENTER,
-    BSPC, DEL, APP, '', '', '', '', '', '2']
   '2':
   - ''
   - '7'
@@ -177,7 +175,7 @@ layers:
   - F10
   - F11
   - DEV TOOLS
-  - ''
+  - {type: held}
   - ''
   - ''
   - ''
@@ -253,3 +251,9 @@ combos:
 - p: [14, 13]
   k: '&DEG'
   l: ['2']
+- p: [31, 32]
+  k: '&mkp MB2'
+  l: ['0', SNIPE]
+- p: [30, 31]
+  k: '&mkp MB3'
+  l: ['0', SNIPE]
