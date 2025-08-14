@@ -50,7 +50,7 @@
         y-invert;
         x-input-code = <INPUT_REL_HWHEEL>;  // horizontal scroll
         bindings = <&ib_wheel_scaler 1 48>;  // vertical scroll speed
-        bindings = <&ib_hwheel_scaler 1 64>;  // horizontal scroll speed
+        bindings = <&ib_hwheel_scaler 1 32>;  // horizontal scroll speed
     };
 
     trackball_scroll_listener {
@@ -497,6 +497,7 @@
         };
     };
 };
+
 
 
 
