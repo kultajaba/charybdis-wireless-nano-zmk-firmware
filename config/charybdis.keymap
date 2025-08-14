@@ -44,7 +44,7 @@
     trackball_scroll_listener_vert {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
-        layers = <1 2>;
+        layers = <1>;
         evt-type = <INPUT_EV_REL>;
         y-input-code = <INPUT_REL_WHEEL>;  // vertical scroll
         y-invert;
@@ -55,7 +55,7 @@
     trackball_scroll_listener_horiz {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
-        layers = <1>;
+        layers = <2>;
         evt-type = <INPUT_EV_REL>;
         y-input-code = <INPUT_REL_MISC>;  // vertical scroll
         y-invert;
@@ -496,6 +496,7 @@
         };
     };
 };
+
 
 
 
