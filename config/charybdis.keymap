@@ -50,7 +50,8 @@
         y-invert;
         x-input-code = <INPUT_REL_HWHEEL>;
         bindings = <&ib_wheel_scaler 1 48>, <&ib_hwheel_scaler 1 48>;
-  // vertical scroll speed
+
+        // vertical scroll speed
     };
 
     trackball_scroll_listener_horiz {
@@ -379,6 +380,7 @@
         RBRACE {
             bindings = <&kp RA(N0)>;
             key-positions = <27 28>;
+            layers = <3>;
         };
 
         ENDASH {
@@ -414,7 +416,7 @@
 
         DEG {
             bindings = <&DEG>;
-            key-positions = <14 13>;
+            key-positions = <13 12>;
             layers = <3>;
         };
 
