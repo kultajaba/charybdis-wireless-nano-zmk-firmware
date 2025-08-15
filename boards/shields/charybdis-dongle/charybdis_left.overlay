@@ -1,6 +1,10 @@
 #include "charybdis.dtsi"
 #include "charybdis_pmw3610.dtsi"
 
+&default_transform {
+	col-offset = <1>;
+};
+
 &kscan0 {
 	compatible = "zmk,kscan-gpio-matrix";
 	
@@ -26,3 +30,4 @@
 	};
 
 };
+
