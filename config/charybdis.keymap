@@ -303,27 +303,6 @@
 
             label = "MW_ALT";
         };
-
-        triple0: triple0 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp N0 &kp N0 &kp N0>;
-
-            label = "TRIPLE0";
-        };
-
-        mb3_navi: mb3_navi {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&mo 1 &mkp MB3>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&mo 1 &mkp MB3>;
-
-            label = "MB3_NAVI";
-        };
     };
 
     // ╭──────┬──────┬──────┬──────┬──────┬──────╮  ╭──────┬──────┬──────┬──────┬──────┬──────╮
@@ -465,19 +444,19 @@
 
         NUM_SYM {
             bindings = <
-  &kp GRAVE          &kp N7  &kp N8        &kp N9  &kp PRCNT    &kp LS(NUMBER_6)   &kp LS(N7)            &kp LS(N8)                 &kp LS(N9)            &kp LS(N0)
-  &kp LS(BACKSLASH)  &kp N4  &kp N5        &kp N6  &kp MINUS    &kp EQUAL          &hm_right RSHFT EXCL  &hm_right RCTRL LS(MINUS)  &hm_right RWIN SLASH  &hm_right LEFT_ALT BACKSLASH
-  &kp COMMA          &kp N1  &kp N2        &kp N3  &none        &kp RIGHT_BRACKET  &kp RA(MINUS)         &kp RA(NUMBER_2)           &kp LS(SLASH)         &kp LS(N2)
+  &kp GRAVE          &kp N7  &kp N8        &kp N9  &kp PRCNT    &kp LS(NUMBER_6)   &kp LS(N7)      &kp LS(N8)           &kp LS(N9)      &kp LS(N0)
+  &kp LS(BACKSLASH)  &kp N4  &kp N5        &kp N6  &kp MINUS    &kp EQUAL          &mt RSHFT EXCL  &mt RCTRL LS(MINUS)  &mt RWIN SLASH  &mt LEFT_ALT BACKSLASH
+  &kp COMMA          &kp N1  &kp N2        &kp N3  &none        &kp RIGHT_BRACKET  &kp RA(MINUS)   &kp RA(NUMBER_2)     &kp LS(SLASH)   &kp LS(N2)
                              &lt 1 PERIOD  &kp N0  &kp ENTER    &none              &none
             >;
         };
 
         FUNC {
             bindings = <
-  &none     &hm_left C_RW C_PREV  &kp C_PP    &hm_left C_FF C_NEXT  &bt BT_NXT      &none       &kp F1  &kp F2   &kp F3   &kp F4
-  &kp LALT  &kp LWIN              &kp LCTRL   &kp LSHFT             &bt BT_CLR      &kp CAPS    &kp F5  &kp F6   &kp F7   &kp F8
-  &none     &kp C_VOL_DN          &kp C_MUTE  &kp C_VOL_UP          &out OUT_TOG    &kp KP_NUM  &kp F9  &kp F10  &kp F11  &kp F12
-                                  &none       &none                 &none           &none       &none
+  &none     &mt C_RW C_PREV  &kp C_PP    &mt C_FF C_NEXT  &bt BT_NXT      &none       &kp F1  &kp F2   &kp F3   &kp F4
+  &kp LALT  &kp LWIN         &kp LCTRL   &kp LSHFT        &bt BT_CLR      &kp CAPS    &kp F5  &kp F6   &kp F7   &kp F8
+  &none     &kp C_VOL_DN     &kp C_MUTE  &kp C_VOL_UP     &out OUT_TOG    &kp KP_NUM  &kp F9  &kp F10  &kp F11  &kp F12
+                             &none       &none            &none           &none       &none
             >;
         };
 
