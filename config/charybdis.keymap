@@ -49,7 +49,8 @@
         y-input-code = <INPUT_REL_WHEEL>;  // vertical scroll
         y-invert;
         x-input-code = <INPUT_REL_HWHEEL>;
-        bindings = <&ib_wheel_scaler 1 48>, <&ib_hwheel_scaler 1 48>;  // vertical scroll speed
+        bindings = <&ib_wheel_scaler 1 48>, <&ib_hwheel_scaler 1 48>;
+  // vertical scroll speed
     };
 
     trackball_scroll_listener_horiz {
@@ -78,7 +79,6 @@
         evt-type = <INPUT_EV_REL>;
         input-code = <INPUT_REL_HWHEEL>;
     };
-
 
     /* adjust cooldown waiting period for mouse key layer after activated */
 
@@ -210,7 +210,7 @@
                 <&macro_press>,
                 <&kp LALT>,
                 <&macro_tap>,
-                <&kp KP_N2 &kp KP_N5 &kp KP_N3>,
+                <&kp KP_N0 &kp KP_N1 &kp KP_N7 &kp KP_N8>,
                 <&macro_release>,
                 <&kp LALT>;
 
@@ -385,12 +385,14 @@
             bindings = <&ENDASH>;
             key-positions = <18 19>;
             layers = <3>;
+            timeout-ms = <300>;
         };
 
         EMDASH {
             bindings = <&EMDASH>;
             key-positions = <18 19 17>;
             layers = <3>;
+            timeout-ms = <300>;
         };
 
         CAPSWORD {
@@ -461,8 +463,8 @@
 
         NUM_SYM {
             bindings = <
-  &none              &kp N7  &kp N8        &kp N9  &kp PRCNT    &kp LS(NUMBER_6)   &kp LS(N7)            &kp LS(N8)                 &kp LS(N9)            &kp LS(N0)
-  &kp LS(BACKSLASH)  &kp N4  &kp N5        &kp N6  &none        &kp EQUAL          &hm_right RSHFT EXCL  &hm_right RCTRL LS(MINUS)  &hm_right RGUI SLASH  &hm_right LEFT_ALT BACKSLASH
+  &kp GRAVE          &kp N7  &kp N8        &kp N9  &kp PRCNT    &kp LS(NUMBER_6)   &kp LS(N7)            &kp LS(N8)                 &kp LS(N9)            &kp LS(N0)
+  &kp LS(BACKSLASH)  &kp N4  &kp N5        &kp N6  &kp MINUS    &kp EQUAL          &hm_right RSHFT EXCL  &hm_right RCTRL LS(MINUS)  &hm_right RGUI SLASH  &hm_right LEFT_ALT BACKSLASH
   &kp COMMA          &kp N1  &kp N2        &kp N3  &none        &kp RIGHT_BRACKET  &kp RA(MINUS)         &kp RA(NUMBER_2)           &kp LS(SLASH)         &kp LS(N2)
                              &lt 1 PERIOD  &kp N0  &kp ENTER    &none              &none
             >;
@@ -496,17 +498,3 @@
         };
     };
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
