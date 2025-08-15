@@ -418,7 +418,7 @@
         BASE {
             bindings = <
   &kp SQT          &kp D            &kp U             &kp P              &kp W        &kp J      &kp K              &kp Y              &kp R             &kp SEMI
-  &hm_left LALT A  &hm_left LWIN S  &hm_left LCTRL E  &hm_left LSHIFT T  &kp G        &kp H      &hm_right RSHFT N  &hm_right RCTRL I  &hm_right RWIN L  &hm_right LALT O
+  &hm_left LALT A  &hm_left LWIN S  &hm_left LCTRL E  &hm_left LSHIFT T  &kp G        &kp H      &hm_right RSHFT N  &hm_right RCTRL I  &hm_right LWIN L  &hm_right LALT O
   &lt 5 Z          &kp X            &kp C             &kp V              &kp B        &kp F      &kp M              &kp COMMA          &kp DOT           &kp Q
                                     &lt 1 ESC         &mkp MB1           &kp SPACE    &kp RSHFT  &lt 3 ENTER
             >;
@@ -426,9 +426,9 @@
 
         NAVI {
             bindings = <
-  &none             &none             &none               &none                &none    &none      &kp HOME        &kp UP    &kp END    &kp PG_UP
+  &none             &none             &kp LC(Y)           &none                &none    &none      &kp HOME        &kp UP    &kp END    &kp PG_UP
   &navi_alt 0 LALT  &navi_gui 0 LWIN  &navi_ctrl 0 LCTRL  &navi_shift 0 LSHFT  &none    &kp TAB    &kp LEFT_ARROW  &kp DOWN  &kp RIGHT  &kp PG_DN
-  &none             &none             &none               &none                &none    &kp ENTER  &kp BSPC        &kp DEL   &kp K_APP  &none
+  &kp LC(Z)         &kp LC(X)         &kp LC(C)           &kp LC(V)            &none    &kp ENTER  &kp BSPC        &kp DEL   &kp K_APP  &none
                                       &none               &none                &none    &none      &mo 3
             >;
         };
@@ -444,19 +444,19 @@
 
         NUM_SYM {
             bindings = <
-  &kp GRAVE          &kp N7  &kp N8        &kp N9  &kp PRCNT    &kp LS(NUMBER_6)   &kp LS(N7)      &kp LS(N8)           &kp LS(N9)      &kp LS(N0)
-  &kp LS(BACKSLASH)  &kp N4  &kp N5        &kp N6  &kp MINUS    &kp EQUAL          &mt RSHFT EXCL  &mt RCTRL LS(MINUS)  &mt RWIN SLASH  &mt LEFT_ALT BACKSLASH
-  &kp COMMA          &kp N1  &kp N2        &kp N3  &none        &kp RIGHT_BRACKET  &kp RA(MINUS)   &kp RA(NUMBER_2)     &kp LS(SLASH)   &kp LS(N2)
-                             &lt 1 PERIOD  &kp N0  &kp ENTER    &none              &none
+  &kp GRAVE          &kp N7  &kp N8        &kp N9  &kp PRCNT    &kp LS(NUMBER_6)  &kp LS(N7)      &kp LS(N8)           &kp LS(N9)      &kp LS(N0)
+  &kp LS(BACKSLASH)  &kp N4  &kp N5        &kp N6  &kp MINUS    &kp LS(NUMBER_3)  &mt RSHFT EXCL  &mt RCTRL LS(MINUS)  &mt LWIN SLASH  &mt LEFT_ALT BACKSLASH
+  &kp COMMA          &kp N1  &kp N2        &kp N3  &none        &kp LS(NUMBER_4)  &kp RA(MINUS)   &kp RA(NUMBER_2)     &kp LS(SLASH)   &kp LS(N2)
+                             &lt 1 PERIOD  &kp N0  &kp ENTER    &none             &none
             >;
         };
 
         FUNC {
             bindings = <
-  &none     &mt C_RW C_PREV  &kp C_PP    &mt C_FF C_NEXT  &bt BT_NXT      &none       &kp F1  &kp F2   &kp F3   &kp F4
-  &kp LALT  &kp LWIN         &kp LCTRL   &kp LSHFT        &bt BT_CLR      &kp CAPS    &kp F5  &kp F6   &kp F7   &kp F8
-  &none     &kp C_VOL_DN     &kp C_MUTE  &kp C_VOL_UP     &out OUT_TOG    &kp KP_NUM  &kp F9  &kp F10  &kp F11  &kp F12
-                             &none       &none            &none           &none       &none
+  &none     &mt C_RW C_PREV  &kp C_PP    &mt C_FF C_NEXT  &bt BT_NXT      &none     &kp F1  &kp F2   &kp F3   &kp F4
+  &kp LALT  &kp LWIN         &kp LCTRL   &kp LSHFT        &bt BT_CLR      &kp CAPS  &kp F5  &kp F6   &kp F7   &kp F8
+  &none     &kp C_VOL_DN     &kp C_MUTE  &kp C_VOL_UP     &out OUT_TOG    &none     &kp F9  &kp F10  &kp F11  &kp F12
+                             &none       &none            &none           &none     &none
             >;
         };
 

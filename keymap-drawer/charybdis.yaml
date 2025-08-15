@@ -19,7 +19,7 @@ layers:
   - H
   - {t: N, h: RSHFT}
   - {t: I, h: RCTRL}
-  - {t: L, h: RWIN}
+  - {t: L, h: LWIN}
   - {t: O, h: LALT}
   - {t: Z, h: SNIPE}
   - X
@@ -39,7 +39,7 @@ layers:
   '1':
   - ''
   - ''
-  - ''
+  - Ctl+ Y
   - ''
   - ''
   - ''
@@ -57,10 +57,10 @@ layers:
   - DOWN
   - RIGHT
   - PG DN
-  - ''
-  - ''
-  - ''
-  - ''
+  - Ctl+ Z
+  - Ctl+ X
+  - Ctl+ C
+  - Ctl+ V
   - ''
   - ENTER
   - BSPC
@@ -124,17 +124,17 @@ layers:
   - '5'
   - '6'
   - '-'
-  - '='
+  - Sft+ 3
   - {t: '!', h: RSHFT}
   - {t: Sft+ -, h: RCTRL}
-  - {t: /, h: RWIN}
+  - {t: /, h: LWIN}
   - {t: \, h: LEFT ALT}
   - ','
   - '1'
   - '2'
   - '3'
   - ''
-  - ']'
+  - Sft+ 4
   - AGr+ -
   - AGr+ 2
   - Sft+ /
@@ -170,7 +170,7 @@ layers:
   - MUTE
   - VOL UP
   - OUT TOG
-  - KP NUM
+  - ''
   - F9
   - F10
   - F11
