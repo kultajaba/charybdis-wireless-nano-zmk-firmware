@@ -62,7 +62,7 @@ layers:
   - Ctl+ C
   - Ctl+ V
   - ''
-  - ENTER
+  - ''
   - BSPC
   - DEL
   - APP
@@ -70,8 +70,8 @@ layers:
   - {type: held}
   - ''
   - ''
-  - ''
-  - '2'
+  - SPACE
+  - {t: ENTER, h: '2'}
   SCROLL_MOD:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -134,7 +134,7 @@ layers:
   - '2'
   - '3'
   - ''
-  - Sft+ 4
+  - Ctl+Alt+ \
   - AGr+ -
   - AGr+ 2
   - Sft+ /

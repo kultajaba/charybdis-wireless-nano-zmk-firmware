@@ -428,8 +428,8 @@
             bindings = <
   &none             &none             &kp LC(Y)           &none                &none    &none      &kp HOME        &kp UP    &kp END    &kp PG_UP
   &navi_alt 0 LALT  &navi_gui 0 LWIN  &navi_ctrl 0 LCTRL  &navi_shift 0 LSHFT  &none    &kp TAB    &kp LEFT_ARROW  &kp DOWN  &kp RIGHT  &kp PG_DN
-  &kp LC(Z)         &kp LC(X)         &kp LC(C)           &kp LC(V)            &none    &kp ENTER  &kp BSPC        &kp DEL   &kp K_APP  &none
-                                      &none               &none                &none    &none      &mo 3
+  &kp LC(Z)         &kp LC(X)         &kp LC(C)           &kp LC(V)            &none    &none      &kp BSPC        &kp DEL   &kp K_APP  &none
+                                      &none               &none                &none    &kp SPACE  &lt 3 ENTER
             >;
         };
 
@@ -444,10 +444,10 @@
 
         NUM_SYM {
             bindings = <
-  &kp GRAVE          &kp N7  &kp N8        &kp N9  &kp PRCNT    &kp LS(NUMBER_6)  &kp LS(N7)      &kp LS(N8)           &kp LS(N9)      &kp LS(N0)
-  &kp LS(BACKSLASH)  &kp N4  &kp N5        &kp N6  &kp MINUS    &kp LS(NUMBER_3)  &mt RSHFT EXCL  &mt RCTRL LS(MINUS)  &mt LWIN SLASH  &mt LEFT_ALT BACKSLASH
-  &kp COMMA          &kp N1  &kp N2        &kp N3  &none        &kp LS(NUMBER_4)  &kp RA(MINUS)   &kp RA(NUMBER_2)     &kp LS(SLASH)   &kp LS(N2)
-                             &lt 1 PERIOD  &kp N0  &kp ENTER    &none             &none
+  &kp GRAVE          &kp N7  &kp N8        &kp N9  &kp PRCNT    &kp LS(NUMBER_6)              &kp LS(N7)      &kp LS(N8)           &kp LS(N9)      &kp LS(N0)
+  &kp LS(BACKSLASH)  &kp N4  &kp N5        &kp N6  &kp MINUS    &kp LS(NUMBER_3)              &mt RSHFT EXCL  &mt RCTRL LS(MINUS)  &mt LWIN SLASH  &mt LEFT_ALT BACKSLASH
+  &kp COMMA          &kp N1  &kp N2        &kp N3  &none        &kp LC(LA(NON_US_BACKSLASH))  &kp RA(MINUS)   &kp RA(NUMBER_2)     &kp LS(SLASH)   &kp LS(N2)
+                             &lt 1 PERIOD  &kp N0  &kp ENTER    &none                         &none
             >;
         };
 
