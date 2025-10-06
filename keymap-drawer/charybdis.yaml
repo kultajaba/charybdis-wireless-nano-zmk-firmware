@@ -11,8 +11,8 @@ layers:
   - Y
   - R
   - ;
-  - {t: A, h: LALT}
-  - {t: S, h: LWIN}
+  - A
+  - S
   - {t: E, h: LCTRL}
   - {t: T, h: LSHIFT}
   - G
@@ -133,7 +133,7 @@ layers:
   - '1'
   - '2'
   - '3'
-  - ''
+  - AL CALCULATOR
   - Ctl+Alt+ \
   - AGr+ -
   - AGr+ 2

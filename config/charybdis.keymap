@@ -417,10 +417,10 @@
 
         BASE {
             bindings = <
-  &kp SQT          &kp D            &kp U             &kp P              &kp W        &kp J      &kp K              &kp Y              &kp R             &kp SEMI
-  &hm_left LALT A  &hm_left LWIN S  &hm_left LCTRL E  &hm_left LSHIFT T  &kp G        &kp H      &hm_right RSHFT N  &hm_right RCTRL I  &hm_right LWIN L  &hm_right LALT O
-  &lt 5 Z          &kp X            &kp C             &kp V              &kp B        &kp F      &kp M              &kp COMMA          &kp DOT           &kp Q
-                                    &lt 1 ESC         &mkp MB1           &kp SPACE    &kp RSHFT  &lt 3 ENTER
+  &kp SQT  &kp D  &kp U             &kp P              &kp W        &kp J      &kp K              &kp Y              &kp R             &kp SEMI
+  &kp A    &kp S  &hm_left LCTRL E  &hm_left LSHIFT T  &kp G        &kp H      &hm_right RSHFT N  &hm_right RCTRL I  &hm_right LWIN L  &hm_right LALT O
+  &lt 5 Z  &kp X  &kp C             &kp V              &kp B        &kp F      &kp M              &kp COMMA          &kp DOT           &kp Q
+                  &lt 1 ESC         &mkp MB1           &kp SPACE    &kp RSHFT  &lt 3 ENTER
             >;
         };
 
@@ -444,10 +444,10 @@
 
         NUM_SYM {
             bindings = <
-  &kp GRAVE          &kp N7  &kp N8        &kp N9  &kp PRCNT    &kp LS(NUMBER_6)              &kp LS(N7)      &kp LS(N8)           &kp LS(N9)      &kp LS(N0)
-  &kp LS(BACKSLASH)  &kp N4  &kp N5        &kp N6  &kp MINUS    &kp LS(NUMBER_3)              &mt RSHFT EXCL  &mt RCTRL LS(MINUS)  &mt LWIN SLASH  &mt LEFT_ALT BACKSLASH
-  &kp COMMA          &kp N1  &kp N2        &kp N3  &none        &kp LC(LA(NON_US_BACKSLASH))  &kp RA(MINUS)   &kp RA(NUMBER_2)     &kp LS(SLASH)   &kp LS(N2)
-                             &lt 1 PERIOD  &kp N0  &kp ENTER    &none                         &none
+  &kp GRAVE          &kp N7  &kp N8        &kp N9  &kp PRCNT              &kp LS(NUMBER_6)              &kp LS(N7)      &kp LS(N8)           &kp LS(N9)      &kp LS(N0)
+  &kp LS(BACKSLASH)  &kp N4  &kp N5        &kp N6  &kp MINUS              &kp LS(NUMBER_3)              &mt RSHFT EXCL  &mt RCTRL LS(MINUS)  &mt LWIN SLASH  &mt LEFT_ALT BACKSLASH
+  &kp COMMA          &kp N1  &kp N2        &kp N3  &kp C_AL_CALCULATOR    &kp LC(LA(NON_US_BACKSLASH))  &kp RA(MINUS)   &kp RA(NUMBER_2)     &kp LS(SLASH)   &kp LS(N2)
+                             &lt 1 PERIOD  &kp N0  &kp ENTER              &none                         &none
             >;
         };
 
