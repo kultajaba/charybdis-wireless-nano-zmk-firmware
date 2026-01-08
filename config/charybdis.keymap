@@ -426,7 +426,7 @@
 
         NAVI {
             bindings = <
-  &none             &none             &kp LC(Y)           &none                &none    &none      &kp HOME        &kp UP    &kp END    &kp PG_UP
+  &none             &caps_word        &kp LC(Y)           &none                &none    &none      &kp HOME        &kp UP    &kp END    &kp PG_UP
   &navi_alt 0 LALT  &navi_gui 0 LWIN  &navi_ctrl 0 LCTRL  &navi_shift 0 LSHFT  &none    &kp TAB    &kp LEFT_ARROW  &kp DOWN  &kp RIGHT  &kp PG_DN
   &kp LC(Z)         &kp LC(X)         &kp LC(C)           &kp LC(V)            &none    &none      &kp BSPC        &kp DEL   &kp K_APP  &none
                                       &none               &none                &none    &kp SPACE  &lt 3 ENTER
