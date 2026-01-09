@@ -435,10 +435,10 @@
 
         SCROLL_MOD {
             bindings = <
-  &trans  &mo 3   &kt D   &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                  &trans  &trans  &trans    &trans  &trans
+  &caps_word  &mo 3   &kt D   &trans  &trans    &trans  &trans  &trans  &trans  &trans
+  &trans      &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+  &trans      &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                      &trans  &trans  &trans    &trans  &trans
             >;
         };
 
