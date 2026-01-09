@@ -6,6 +6,7 @@ This repository offers pre-configured ZMK firmware designed for Wireless Charybd
 
 - Bluetooth and USB
 - Dongle
+- лллл
 
 Additionally, this repository automatically generates SVG images of all layers in the keymap, and adds it to the README. It also provides high level instructions and resources on how to customize and build the firmware to meet your specific needs.
 
